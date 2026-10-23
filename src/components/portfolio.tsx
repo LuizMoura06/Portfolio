@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ArrowDown, ArrowUp, ArrowUpRight, BriefcaseBusiness, Check, Code2, Github, GraduationCap, Linkedin, Mail, MapPin, Menu, MessageCircle, X } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpRight, BriefcaseBusiness, Check, Code2, GraduationCap, Mail, MapPin, Menu, MessageCircle, X } from "lucide-react";
+import { Github, Linkedin } from "./brand-icons";
 import { profile, skills, learning } from "@/data/profile";
 import { sortProjects, type Locale } from "@/data/projects";
 import { experiences } from "@/data/experiences";

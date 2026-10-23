@@ -7,8 +7,9 @@ for (const width of [1440, 1024, 768, 390, 360]) {
     page.on("pageerror", error => errors.push(error.message));
     await page.goto("/");
     await expect(page.getByRole("heading", { name: "Luiz Moura." })).toBeVisible();
+    await page.locator("img").scrollIntoViewIfNeeded();
     await expect(page.locator("img")).toBeVisible();
-    expect(await page.locator("img").evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+    await expect.poll(() => page.locator("img").evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     if (width <= 700) await page.getByRole("button", { name: "Abrir menu" }).click();
     await page.locator("#main-navigation").getByRole("link", { name: "Projetos", exact: true }).click();
@@ -41,6 +42,9 @@ test("real API validation and unavailable feedback are accessible", async ({ pag
 test("screenshots of the actual implementation", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await page.locator("img").scrollIntoViewIfNeeded();
+  await expect.poll(() => page.locator("img").evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+  await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: "docs/screenshots/desktop-pt.png", fullPage: true });
   await page.getByRole("button", { name: "English", exact: true }).click();
   await page.screenshot({ path: "docs/screenshots/desktop-en.png", fullPage: true });

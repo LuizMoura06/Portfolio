@@ -29,8 +29,19 @@
 - Dois commits de contribuição no Voluntarize verificados pela API (autor e arquivos).
 - git check-ignore confirma proteção de .env.local.
 
+## Checkpoint de qualidade — 23h40 BRT
+- Primeiro push confirmado: 1ac6b67 (interface PT/EN + API).
+- Build Next.js 16.4.2 concluído; / e Open Graph estáticos, /api/contact dinâmico.
+- npm run lint e npm run typecheck: aprovados após correções.
+- npm test: 6 testes aprovados.
+- npm run test:e2e: 7 testes aprovados; 1440, 1024, 768, 390 e 360 px sem overflow, menu e PT/EN funcionais.
+- Screenshots reais criados em docs/screenshots, PT/EN desktop e PT mobile.
+- POST real para /api/contact retornou 200 {success:true}; ID aceito pelo Resend. Conferir entrega no painel.
+- Usuário AUTORIZOU publicação na Vercel; conta autenticada e repositório disponível para importação.
+- npm audit: 5 avisos high na cadeia de ferramentas ESLint (braces/micromatch/fast-glob); auditoria de produção sem avisos na instalação. Não aplicar downgrade automático incompatível do eslint-config-next.
+
 ## Último commit
-- Consultar `git log -1 --oneline`; este arquivo será atualizado entre fases.
+- Consulte `git log -1 --oneline`; o checkpoint anterior publicado é 1ac6b67.
 
 ## Próximo passo
-- Instalar dependências, concluir interface e executar lint, typecheck, testes e build.
+- Publicar a revisão validada na Vercel com RESEND_API_KEY e CONTACT_FROM_EMAIL; verificar URL pública e entrega de e-mail. Atualizar README e requisitos com evidências finais.

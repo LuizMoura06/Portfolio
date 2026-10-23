@@ -35,7 +35,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
     } catch { setStatus("failure"); }
     finally { locked.current = false; }
   }
-  return <form className="contact-form" onSubmit={handleSubmit(submit)} noValidate aria-label={t.formTitle}>
+  return <form className="contact-form" onSubmit={event => { void handleSubmit(submit)(event); }} noValidate aria-label={t.formTitle}>
     <h3>{t.formTitle}</h3><p className="muted form-intro">{t.formIntro} {t.required}</p>
     <div className="form-row">
       <div className="field"><label htmlFor="name">{t.name} <span aria-hidden="true">*</span></label>
