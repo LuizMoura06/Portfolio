@@ -6,7 +6,7 @@ export const translations = {
     subtitle: "Suporte Técnico • Desenvolvimento Web • Tecnologia",
     intro: "Curiosidade para aprender. Dedicação para resolver. Construindo meu caminho na tecnologia, uma experiência de cada vez.",
     viewProjects: "Ver projetos", getInTouch: "Entrar em contato", location: "Belo Horizonte, MG · Brasil",
-    profileLabel: "EM CONSTANTE EVOLUÇÃO", profileCaption: "Pessoas, tecnologia e boas soluções.", courseShort: "Engenharia de Software", university: "PUC Minas", ongoing: "Em andamento",
+    profileLabel: "EM CONSTANTE EVOLUÇÃO", profileCaption: "Pessoas, tecnologia e boas soluções.", profilePhotoAlt: "Foto de Luiz Gustavo Moura e Souza", courseShort: "Engenharia de Software", university: "PUC Minas", ongoing: "Em andamento",
     aboutEyebrow: "01 / QUEM SOU", aboutTitle: "Por trás do código,", aboutAccent: "uma pessoa curiosa.",
     about: [
       "Sou Luiz Gustavo Moura e Souza, estudante de Engenharia de Software na PUC Minas, campus Coração Eucarístico, em Belo Horizonte. Gosto de entender como a tecnologia funciona e como ela pode facilitar a vida das pessoas.",
@@ -39,7 +39,7 @@ export const translations = {
     subtitle: "IT Support • Web Development • Technology",
     intro: "Curiosity to learn. Dedication to solve. Building my path in technology, one experience at a time.",
     viewProjects: "View projects", getInTouch: "Get in touch", location: "Belo Horizonte, MG · Brazil",
-    profileLabel: "ALWAYS EVOLVING", profileCaption: "People, technology and thoughtful solutions.", courseShort: "Software Engineering", university: "PUC Minas", ongoing: "In progress",
+    profileLabel: "ALWAYS EVOLVING", profileCaption: "People, technology and thoughtful solutions.", profilePhotoAlt: "Photo of Luiz Gustavo Moura e Souza", courseShort: "Software Engineering", university: "PUC Minas", ongoing: "In progress",
     aboutEyebrow: "01 / WHO I AM", aboutTitle: "Behind the code,", aboutAccent: "a curious person.",
     about: [
       "I’m Luiz Gustavo Moura e Souza, a Software Engineering student at PUC Minas, Coração Eucarístico campus, in Belo Horizonte, Brazil. I enjoy understanding how technology works and how it can make people's lives easier.",

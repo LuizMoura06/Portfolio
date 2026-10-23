@@ -7,9 +7,16 @@ for (const width of [1440, 1024, 768, 390, 360]) {
     page.on("pageerror", error => errors.push(error.message));
     await page.goto("/");
     await expect(page.getByRole("heading", { name: "Luiz Moura." })).toBeVisible();
-    await page.locator("img").scrollIntoViewIfNeeded();
-    await expect(page.locator("img")).toBeVisible();
-    await expect.poll(() => page.locator("img").evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+    const portrait = page.locator(".profile-photo img");
+    await expect(portrait).toHaveAttribute("alt", "Foto de Luiz Gustavo Moura e Souza");
+    await expect.poll(() => portrait.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+    const photoBounds = await portrait.boundingBox();
+    expect(photoBounds).not.toBeNull();
+    expect(photoBounds!.width / photoBounds!.height).toBeCloseTo(360 / 340, 1);
+    const projectImage = page.locator(".project-visual img");
+    await projectImage.scrollIntoViewIfNeeded();
+    await expect(projectImage).toBeVisible();
+    await expect.poll(() => projectImage.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     if (width <= 700) await page.getByRole("button", { name: "Abrir menu" }).click();
     await page.locator("#main-navigation").getByRole("link", { name: "Projetos", exact: true }).click();
@@ -18,6 +25,7 @@ for (const width of [1440, 1024, 768, 390, 360]) {
     const before = await page.locator("#projetos").evaluate(el => el.getBoundingClientRect().top);
     await page.getByRole("button", { name: "English", exact: true }).click();
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
+    await expect(portrait).toHaveAttribute("alt", "Photo of Luiz Gustavo Moura e Souza");
     await expect(page.getByRole("heading", { name: "Turning learning into real projects." })).toBeVisible();
     const after = await page.locator("#projetos").evaluate(el => el.getBoundingClientRect().top);
     expect(Math.abs(after - before)).toBeLessThan(100);
@@ -42,8 +50,8 @@ test("client and real API validation are accessible and localized", async ({ pag
 test("screenshots of the actual implementation", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
-  await page.locator("img").scrollIntoViewIfNeeded();
-  await expect.poll(() => page.locator("img").evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+  await page.locator(".project-visual img").scrollIntoViewIfNeeded();
+  await expect.poll(() => page.locator(".project-visual img").evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: "docs/screenshots/hero-desktop.png" });
   await page.screenshot({ path: "docs/screenshots/desktop-pt.png", fullPage: true });

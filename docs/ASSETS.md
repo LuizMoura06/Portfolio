@@ -2,7 +2,15 @@
 
 ## Design
 
-[Figma oficial](https://www.figma.com/design/huHP7HxJKAxqY34czJmvPf/Luiz-Moura-%E2%80%94-Portf%C3%B3lio-Profissional-%C2%B7-DIAW). Direção fornecida pelo autor: grafite e verde-lima discreto. Figma MCP limitado pelo plano em 22/10/2026; fidelidade exata não verificada. Guia e foto estão em outro computador. O monograma LM é uma marca tipográfica, não um retrato.
+[Figma oficial](https://www.figma.com/design/huHP7HxJKAxqY34czJmvPf). Identidade visual em grafite e verde-lima discreto, com protótipo desktop, tablet e mobile, em português e inglês.
+
+| Arquivo | Origem | Uso |
+| --- | --- | --- |
+| public/images/luiz-linkedin.png | Fotografia original fornecida por Luiz, originalmente “Luiz — LinkedIn.png”, 360 × 340 px | Retrato no cartão principal, sem alteração do rosto ou dos pixels da imagem |
+| docs/figma/wireframe-desktop-1440.png | Exportação fornecida por Luiz, originalmente “Wireframe · Desktop · 1440.png” | Planejamento desktop de 1440 px, incorporado ao README |
+| docs/figma/wireframe-mobile-390.png | Exportação fornecida por Luiz, originalmente “Wireframe · Mobile · 390.png” | Planejamento mobile de 390 px, incorporado ao README |
+
+Os arquivos foram adicionados em uma melhoria posterior à entrega original, em 23/10/2026, preservando os commits anteriores.
 
 ## Voluntarize
 

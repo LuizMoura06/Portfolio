@@ -1,5 +1,17 @@
 # Checkpoint DIAW — publicado em 22/10/2026
 
+## Melhoria posterior à entrega — 23/10/2026
+- Foto original fornecida pelo autor adicionada ao cartão principal com next/image, proporção preservada e alt PT/EN.
+- Arquivo renomeado para public/images/luiz-linkedin.png; pixels da fotografia não editados.
+- Wireframes desktop 1440 e mobile 390 adicionados em docs/figma e incorporados ao README.
+- README reescrito em primeira pessoa, com as 13 seções solicitadas, informações técnicas e URLs reais.
+- Capturas existentes atualizadas nos mesmos caminhos para mostrar a fotografia.
+- Validações: lint, typecheck, build, 6 testes de schema/API/timeline e 8 E2E aprovados.
+- Foto verificada em 1440, 1024, 768, 390 e 360 px; proporção, carregamento e alt PT/EN aprovados.
+- Os 6 caminhos de imagens do README foram conferidos e existem no repositório.
+- .env.local segue ignorado e não rastreado. API, formulário, secrets, dados de projetos/experiências e configuração Vercel preservados.
+- Próxima ação deste checkpoint: commit novo e push main, seguidos da confirmação da foto na URL pública.
+
 ## Concluído
 - Repositório clonado diretamente em G:\DIAW\Portfolio, branch main.
 - origin confirmado: https://github.com/LuizMoura06/Portfolio.git.
@@ -13,7 +25,7 @@
 - Resend configurado em .env.local ignorado e nas variáveis da Vercel; entrega real local e produção confirmadas no painel.
 - Site público: https://portfolio-eta-lyart-an0rd3myb7.vercel.app
 - Vercel: projeto portfolio em Moura's projects (Hobby), GitHub main conectado e deploy contínuo.
-- SITE_URL adicionada ao ambiente Production com a URL verdadeira; próximo push aplica metadata ao novo build.
+- SITE_URL configurada no ambiente Production com a URL verdadeira e metadata pública verificada.
 
 ## Decisões
 - Next.js App Router, React, TypeScript, Tailwind, Lucide, React Hook Form, Zod, Resend.
@@ -21,10 +33,9 @@
 - Nenhuma operação de escrita no repositório Voluntarize.
 
 ## Limitações conhecidas
-- Guia e foto no caminho C:\Users\arima não existem neste computador.
-- Figma MCP bloqueado pelo limite do plano; seguir visual grafite/lima descrito pelo autor.
+- As imagens do Figma e a fotografia foram fornecidas localmente pelo autor em 23/10/2026.
 - Resend configurado com onboarding@resend.dev e destino igual ao e-mail da conta. Não enviar para outros destinatários sem domínio verificado.
-- Wireframes e foto não foram exportados; dependem de acesso ao Figma ou arquivos do outro computador. Única pendência documental acadêmica: imagens dos protótipos no README.
+- Pendência de fotografia e wireframes resolvida na melhoria de 23/10/2026.
 - Sem falha funcional conhecida após os testes executados; sem auditoria formal de leitor de tela.
 
 ## Testes executados
@@ -45,13 +56,13 @@
 - npm audit: 5 avisos high na cadeia de ferramentas ESLint (braces/micromatch/fast-glob); auditoria de produção sem avisos na instalação. Não aplicar downgrade automático incompatível do eslint-config-next.
 
 ## Último commit
+- Entrega original e README publicado: be68626; esta melhoria deve aparecer em um commit novo, sem reescrever o histórico.
 - Código publicado e verificado: 21b589d (fix: validate production build and responsive portfolio with real screenshots).
 - Histórico anterior: 1ac6b67 (implementação inicial), 7fb1ab7 (README inicial).
 - O commit final de documentação será posterior; consulte `git log -1 --oneline` para seu identificador, pois um commit não pode registrar seu próprio hash.
 
 ## Próximo passo
-- Enviar documentação final e testes ao GitHub; confirmar deploy automático com SITE_URL.
-- Para a entrega acadêmica: usar a URL pública, GitHub e Figma já registrados no README; adicionar imagens dos wireframes quando disponíveis.
+- Confirmar redeploy automático da melhoria de 23/10/2026 e fotografia na versão pública.
 - Em uma retomada: ler este arquivo, executar git status e git log -5 --oneline e inspecionar o código existente. NÃO recriar o projeto.
 
 ## Produção verificada

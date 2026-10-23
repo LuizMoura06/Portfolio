@@ -4,7 +4,7 @@ PDF e template oficiais lidos em 22/10/2026. Pontuação final compete ao profes
 
 | Requisito | Concluído/Pendente | Evidência |
 | --- | --- | --- |
-| Figma de média fidelidade | Pendente de verificação/exportação | Link oficial; MCP limitado pelo plano; imagens dos wireframes pendentes |
+| Figma de média fidelidade | Concluído | Wireframes desktop 1440 px e mobile 390 px em docs/figma e incorporados no README; link do protótipo completo |
 | Repositório público | Concluído | LuizMoura06/Portfolio, origin e branch main confirmados |
 | README conforme template | Concluído | README.md, tecnologias reais, arquitetura e instruções |
 | Navegação | Concluído | Testes E2E de âncoras, menu e troca de idioma |
@@ -27,6 +27,6 @@ PDF e template oficiais lidos em 22/10/2026. Pontuação final compete ao profes
 
 ## Sprints
 
-- LAB01S01 (4 pontos): repositório, documentação e interface implementados; imagens dos protótipos pendentes.
+- LAB01S01 (4 pontos): repositório, documentação, interface e imagens dos protótipos disponíveis. Wireframes adicionados em 23/10/2026, após a entrega original.
 - LAB01S02 (4 pontos): funcionalidades e envio real locais verificados.
-- LAB01S03 (7 pontos): imagens reais, README, build, screenshots, deploy e verificação pública concluídos. Exportação dos wireframes Figma ainda pendente para complementar LAB01S01.
+- LAB01S03 (7 pontos): imagens reais, README, build, screenshots, deploy e verificação pública concluídos.

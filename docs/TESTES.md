@@ -33,7 +33,16 @@ O teste adicional encontrou dois elementos role=alert: feedback e anunciador de 
 ## Limites
 
 - Sem auditoria formal com leitor de tela ou certificação WCAG.
-- Foto e guia estão em outro computador; foto não inventada.
-- Limite Figma impediu conferir fidelidade exata e exportar wireframes; o link oficial está no README.
+- A fotografia e os wireframes, indisponíveis na entrega inicial, foram incorporados a partir dos arquivos originais fornecidos pelo autor em 23/10/2026.
 - Os e-mails reais foram enviados somente ao autor, com autorização. Respostas controladas de E2E não enviam e-mail e são identificadas separadamente.
 - Remetente onboarding@resend.dev é suficiente para enviar ao e-mail da conta Resend; um domínio verificado será necessário para expandir o uso do serviço.
+
+## Revalidação da melhoria posterior — 23/10/2026
+
+- Lint, TypeScript e build de produção: aprovados.
+- 6 testes de schema, API e timeline: aprovados.
+- 8 cenários E2E: aprovados, incluindo PT/EN, menu, imagem do projeto, validação e estados do formulário.
+- Fotografia original: carregamento e proporção 360:340 verificados em 1440, 1024, 768, 390 e 360 px; texto alternativo PT/EN conferido.
+- Screenshots existentes atualizados para representar o site com a foto.
+- README: 3 screenshots, 2 wireframes e 1 imagem do Voluntarize com caminhos relativos existentes.
+- .env.local ignorado e não rastreado. Não foram alteradas credenciais nem a integração de e-mail.
