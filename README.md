@@ -8,7 +8,7 @@ Apresenta formação, habilidades, experiências e contribuições acadêmicas v
 
 - [Repositório público](https://github.com/LuizMoura06/Portfolio)
 - [Figma oficial: wireframes, design final e componentes](https://www.figma.com/design/huHP7HxJKAxqY34czJmvPf/Luiz-Moura-%E2%80%94-Portf%C3%B3lio-Profissional-%C2%B7-DIAW)
-- **Site na Vercel:** aguardando autorização e deploy; URL será adicionada após verificação real.
+- **Site publicado:** [Luiz Moura — portfólio na Vercel](https://portfolio-eta-lyart-an0rd3myb7.vercel.app)
 - [Voluntarize](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2026-1-ti1-0438100-equipe-voluntarize)
 - [Checkpoint](STATUS.md) · [Requisitos](docs/REQUISITOS.md) · [Fontes e autoria](docs/ASSETS.md)
 
@@ -156,14 +156,27 @@ O arquivo oficial contém, conforme informado pelo autor, as páginas “01 — 
 - Capturas reais desktop/mobile. Resultados executados e limites atuais em STATUS.md.
 - Respostas controladas podem testar feedbacks, mas não comprovam envio real. O teste de e-mail exige aceitação do Resend e confirmação de entrega.
 
+### Resultados em 22/10/2026
+
+Build de produção, ESLint, TypeScript e 6 testes de schema/API/timeline aprovados. Na URL pública, foram verificados os 5 tamanhos de tela, navegação, PT/EN, menu, imagens, validação e screenshots. O cenário adicional de envio/em processamento/sucesso/falha passou com respostas controladas (8 cenários E2E verificados no total).
+
+**Envio real em produção confirmado:** POST /api/contact aceito e status **Delivered** no painel Resend, com destino mouradev636@gmail.com. [Registro de validação](docs/TESTES.md).
+
+```powershell
+$env:PLAYWRIGHT_BASE_URL='https://portfolio-eta-lyart-an0rd3myb7.vercel.app'
+npm run test:e2e
+```
+
+Auditoria de dependências de produção: zero vulnerabilidades conhecidas na verificação. Há 5 alertas na cadeia de ferramentas de desenvolvimento do ESLint; consulte STATUS.md. Nenhum downgrade incompatível foi aplicado.
+
 ## Deploy na Vercel
 
-**Aguardando autorização explícita do autor.** Importar LuizMoura06/Portfolio, branch main, raiz do repositório, framework Next.js. Não fazer exportação estática: a API exige servidor.
+**Publicado com autorização explícita do autor em 22/10/2026**, na conta Moura's projects, plano Hobby. [Acessar aplicação](https://portfolio-eta-lyart-an0rd3myb7.vercel.app). Repositório LuizMoura06/Portfolio, branch main, raiz ./, framework Next.js. Não fazer exportação estática: a API exige servidor.
 
 1. Usar Node 24 LTS e os comandos padrão npm ci / npm run build.
 2. Configurar RESEND_API_KEY e CONTACT_FROM_EMAIL no ambiente da Vercel.
-3. Publicar, verificar a URL pública e testar navegação, mobile e envio real.
-4. Definir SITE_URL com a origem real e atualizar este README com o link publicado.
+3. Verificar a URL pública e testar navegação, mobile e envio real após alterações.
+4. Manter SITE_URL com a origem real da aplicação.
 
 Ao conectar deploy contínuo, pushes posteriores na main poderão publicar automaticamente.
 

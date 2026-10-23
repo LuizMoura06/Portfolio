@@ -6,27 +6,27 @@ PDF e template oficiais lidos em 22/10/2026. Pontuação final compete ao profes
 | --- | --- | --- |
 | Figma de média fidelidade | Pendente de verificação/exportação | Link oficial; MCP limitado pelo plano; imagens dos wireframes pendentes |
 | Repositório público | Concluído | LuizMoura06/Portfolio, origin e branch main confirmados |
-| README conforme template | Implementado; revisão em andamento | README.md |
-| Navegação | Implementado; teste em andamento | portfolio.tsx, âncoras e menu |
-| Header/footer | Implementado; teste em andamento | Header fixo e rodapé |
-| Sobre Mim PT/EN | Implementado; teste em andamento | translations.ts |
-| Timeline dinâmica cronológica | Implementado; teste em andamento | projects.ts, sortProjects |
+| README conforme template | Concluído | README.md, tecnologias reais, arquitetura e instruções |
+| Navegação | Concluído | Testes E2E de âncoras, menu e troca de idioma |
+| Header/footer | Concluído | Header fixo e rodapé; screenshots reais |
+| Sobre Mim PT/EN | Concluído | translations.ts; testes de idioma |
+| Timeline dinâmica cronológica | Concluído | projects.ts e teste de sortProjects |
 | Tecnologias e imagem real | Concluído | Imagem real do Voluntarize e ASSETS.md |
 | Contribuições comprovadas | Concluído | Dois commits de LuizMoura06 vinculados |
-| Experiências | Implementado; teste em andamento | experiences.ts |
-| Links de contato | Implementado; teste em andamento | E-mail, WhatsApp, GitHub, LinkedIn |
-| Formulário frontend/backend | Implementado; teste em andamento | contact-form.tsx e POST /api/contact |
-| Envio real | Pendente de teste | Resend autenticado e .env.local configurado |
-| Validação cliente/servidor | Implementado; teste em andamento | Schema compartilhado |
-| Responsividade | Pendente de teste | Breakpoints 1440/1024/768/390/360 px |
-| Acessibilidade | Implementado; revisão em andamento | Labels, foco, semântica e feedbacks |
-| Screenshots desktop/mobile | Pendente | Gerar após o build |
-| Hospedagem | Pendente | Autorização explícita para Vercel necessária |
-| URL publicada | Pendente | Inserir somente após deploy real |
+| Experiências | Concluído | experiences.ts e renderização nas capturas |
+| Links de contato | Concluído | E-mail, WhatsApp, GitHub, LinkedIn com destinos fornecidos |
+| Formulário frontend/backend | Concluído | contact-form.tsx e POST /api/contact; produção testada |
+| Envio real | Concluído | Resend confirmou Delivered em produção, ID 01a166a4-e4d8-706e-bb96-cbafc313648b |
+| Validação cliente/servidor | Concluído | 6 testes de schema/API/timeline e validação no navegador |
+| Responsividade | Concluído | E2E na URL pública em 1440/1024/768/390/360 px, sem overflow |
+| Acessibilidade | Concluído na revisão básica | Labels, foco, semântica e feedbacks; sem auditoria formal de leitor de tela |
+| Screenshots desktop/mobile | Concluído | docs/screenshots/desktop-pt.png, desktop-en.png e mobile-pt.png |
+| Hospedagem | Concluído | Vercel Ready, Next.js + função /api/contact |
+| URL publicada | Concluído | https://portfolio-eta-lyart-an0rd3myb7.vercel.app, HTTP 200 e README atualizado |
 | Organização de código | Concluído | app/components/data/lib/tests/docs |
 
 ## Sprints
 
 - LAB01S01 (4 pontos): repositório, documentação e interface implementados; imagens dos protótipos pendentes.
-- LAB01S02 (4 pontos): funcionalidades implementadas, testes em andamento.
-- LAB01S03 (7 pontos): imagens reais e README preparados; build, screenshots e deploy em andamento ou pendentes.
+- LAB01S02 (4 pontos): funcionalidades e envio real locais verificados.
+- LAB01S03 (7 pontos): imagens reais, README, build, screenshots, deploy e verificação pública concluídos. Exportação dos wireframes Figma ainda pendente para complementar LAB01S01.
