@@ -70,7 +70,7 @@ export function Portfolio() {
           </div>
           <div className="profile-art" aria-label={t.profileCaption}>
             <div className="art-top"><span className="tiny-label">{t.profileLabel}</span><ArrowUpRight size={22} /></div>
-            <div className="profile-photo"><Image src="/images/luiz-linkedin.png" alt={t.profilePhotoAlt} fill sizes="(max-width: 900px) 150px, 190px" preload /></div>
+            <div className="profile-photo"><Image src="/images/luiz-linkedin.png" alt={t.profilePhotoAlt} fill sizes="(max-width: 700px) 280px, (max-width: 900px) 270px, 340px" preload /></div>
             <div className="art-bottom"><span>{t.profileCaption}</span><Code2 size={26} /></div>
             <div className="education-float"><div className="icon-box"><GraduationCap size={24} /></div><div><strong>{t.courseShort}</strong><span>{t.university} <span className="lime">/</span> {t.ongoing}</span></div></div>
           </div>

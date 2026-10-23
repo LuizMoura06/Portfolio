@@ -1,5 +1,11 @@
 # Checkpoint DIAW — publicado em 22/10/2026
 
+## Ajuste de destaque da fotografia — 23/10/2026
+- Fotografia ampliada para até 340 px no desktop e 280 px no mobile, centralizada com object-fit: cover e enquadramento vertical em 35%.
+- Altura externa do cartão preservada em cada breakpoint; restante do layout e funcionalidades sem alterações.
+- Build, lint e typecheck aprovados; cinco cenários de resolução e atualização das capturas aprovados (6 testes E2E).
+- Revisão visual desktop/mobile concluída. Base anterior: 6868425; ajuste publicado em um novo commit, sem reescrever histórico.
+
 ## Melhoria posterior à entrega — 23/10/2026
 - Foto original fornecida pelo autor adicionada ao cartão principal com next/image, proporção preservada e alt PT/EN.
 - Arquivo renomeado para public/images/luiz-linkedin.png; pixels da fotografia não editados.

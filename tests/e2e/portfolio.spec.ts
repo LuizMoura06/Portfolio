@@ -12,7 +12,13 @@ for (const width of [1440, 1024, 768, 390, 360]) {
     await expect.poll(() => portrait.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
     const photoBounds = await portrait.boundingBox();
     expect(photoBounds).not.toBeNull();
-    expect(photoBounds!.width / photoBounds!.height).toBeCloseTo(360 / 340, 1);
+    expect(photoBounds!.width).toBeGreaterThanOrEqual(width <= 700 ? 240 : 200);
+    expect(await portrait.evaluate(el => getComputedStyle(el).objectFit)).toBe("cover");
+    const cardBounds = await page.locator(".profile-art").boundingBox();
+    expect(cardBounds).not.toBeNull();
+    expect(cardBounds!.height).toBe(width <= 700 ? 320 : width <= 900 ? 350 : width <= 1100 ? 370 : 405);
+    expect(photoBounds!.y).toBeGreaterThan(cardBounds!.y);
+    expect(photoBounds!.y + photoBounds!.height).toBeLessThan(cardBounds!.y + cardBounds!.height);
     const projectImage = page.locator(".project-visual img");
     await projectImage.scrollIntoViewIfNeeded();
     await expect(projectImage).toBeVisible();
